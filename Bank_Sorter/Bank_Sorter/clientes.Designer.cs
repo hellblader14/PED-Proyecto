@@ -38,10 +38,11 @@
 			this.rbPrio = new System.Windows.Forms.RadioButton();
 			this.txtApellido = new System.Windows.Forms.TextBox();
 			this.txtNombre = new System.Windows.Forms.TextBox();
-			this.txtDui = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
+			this.radioButton1 = new System.Windows.Forms.RadioButton();
+			this.radioButton2 = new System.Windows.Forms.RadioButton();
 			((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
@@ -101,6 +102,8 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.radioButton2);
+			this.groupBox1.Controls.Add(this.radioButton1);
 			this.groupBox1.Controls.Add(this.rbMiem);
 			this.groupBox1.Controls.Add(this.rbPrio);
 			this.groupBox1.Location = new System.Drawing.Point(67, 192);
@@ -115,25 +118,25 @@
 			// rbMiem
 			// 
 			this.rbMiem.AutoSize = true;
-			this.rbMiem.Location = new System.Drawing.Point(131, 78);
+			this.rbMiem.Location = new System.Drawing.Point(16, 76);
 			this.rbMiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.rbMiem.Name = "rbMiem";
-			this.rbMiem.Size = new System.Drawing.Size(83, 21);
+			this.rbMiem.Size = new System.Drawing.Size(74, 21);
 			this.rbMiem.TabIndex = 1;
 			this.rbMiem.TabStop = true;
-			this.rbMiem.Text = "Miembro";
+			this.rbMiem.Text = "Normal";
 			this.rbMiem.UseVisualStyleBackColor = true;
 			// 
 			// rbPrio
 			// 
 			this.rbPrio.AutoSize = true;
-			this.rbPrio.Location = new System.Drawing.Point(131, 36);
+			this.rbPrio.Location = new System.Drawing.Point(18, 35);
 			this.rbPrio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.rbPrio.Name = "rbPrio";
-			this.rbPrio.Size = new System.Drawing.Size(90, 21);
+			this.rbPrio.Size = new System.Drawing.Size(50, 21);
 			this.rbPrio.TabIndex = 0;
 			this.rbPrio.TabStop = true;
-			this.rbPrio.Text = "Prioritario";
+			this.rbPrio.Text = "VIP";
 			this.rbPrio.UseVisualStyleBackColor = true;
 			// 
 			// txtApellido
@@ -152,15 +155,6 @@
 			this.txtNombre.Name = "txtNombre";
 			this.txtNombre.Size = new System.Drawing.Size(185, 22);
 			this.txtNombre.TabIndex = 35;
-			// 
-			// txtDui
-			// 
-			this.txtDui.Location = new System.Drawing.Point(516, 365);
-			this.txtDui.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.txtDui.Name = "txtDui";
-			this.txtDui.Size = new System.Drawing.Size(185, 22);
-			this.txtDui.TabIndex = 34;
-			this.txtDui.Visible = false;
 			// 
 			// label3
 			// 
@@ -190,6 +184,30 @@
 			this.label1.TabIndex = 31;
 			this.label1.Text = "Número de Documento";
 			// 
+			// radioButton1
+			// 
+			this.radioButton1.AutoSize = true;
+			this.radioButton1.Location = new System.Drawing.Point(169, 35);
+			this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.radioButton1.Name = "radioButton1";
+			this.radioButton1.Size = new System.Drawing.Size(63, 21);
+			this.radioButton1.TabIndex = 2;
+			this.radioButton1.TabStop = true;
+			this.radioButton1.Text = "Black";
+			this.radioButton1.UseVisualStyleBackColor = true;
+			// 
+			// radioButton2
+			// 
+			this.radioButton2.AutoSize = true;
+			this.radioButton2.Location = new System.Drawing.Point(169, 76);
+			this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.radioButton2.Name = "radioButton2";
+			this.radioButton2.Size = new System.Drawing.Size(116, 21);
+			this.radioButton2.TabIndex = 3;
+			this.radioButton2.TabStop = true;
+			this.radioButton2.Text = "Tercera Edad";
+			this.radioButton2.UseVisualStyleBackColor = true;
+			// 
 			// clientes
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -204,7 +222,6 @@
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.txtApellido);
 			this.Controls.Add(this.txtNombre);
-			this.Controls.Add(this.txtDui);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
@@ -230,9 +247,10 @@
 		private System.Windows.Forms.RadioButton rbPrio;
 		private System.Windows.Forms.TextBox txtApellido;
 		private System.Windows.Forms.TextBox txtNombre;
-		private System.Windows.Forms.TextBox txtDui;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.RadioButton radioButton2;
+		private System.Windows.Forms.RadioButton radioButton1;
 	}
 }
