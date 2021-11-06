@@ -1,0 +1,16 @@
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\bin\Debug\Bank_Sorter.exe.config
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\bin\Debug\Bank_Sorter.exe
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\bin\Debug\Bank_Sorter.pdb
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\obj\Debug\Bank_Sorter.csprojAssemblyReference.cache
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\obj\Debug\Bank_Sorter.clientes.resources
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\obj\Debug\Bank_Sorter.Form1.resources
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\obj\Debug\Bank_Sorter.MainMenu.resources
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\obj\Debug\Bank_Sorter.Properties.Resources.resources
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\obj\Debug\Bank_Sorter.csproj.GenerateResource.cache
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\obj\Debug\Bank_Sorter.csproj.CoreCompileInputs.cache
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\obj\Debug\Bank_Sorter.exe
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\obj\Debug\Bank_Sorter.pdb
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\obj\Debug\Bank_Sorter.GestionTurnos.resources
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\obj\Debug\Bank_Sorter.Tickets.resources
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\obj\Debug\Bank_Sorter.Usuarios.resources
+C:\Users\sm_mc\source\repos\Bank_Sorter\Bank_Sorter\obj\Debug\Bank_Sorter.Ventanilla.resources
