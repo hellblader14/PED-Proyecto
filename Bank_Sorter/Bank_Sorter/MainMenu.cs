@@ -82,7 +82,8 @@ namespace Bank_Sorter
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-			cargarForm(g);
+			GestionTurnos turnos = new GestionTurnos();
+			turnos.Show();
 
 		}
 
@@ -96,6 +97,19 @@ namespace Bank_Sorter
 		{
 			cargarForm(t);
 
+		}
+
+		private void button6_Click(object sender, EventArgs e)
+		{
+			Form1 sesion = new Form1();
+			sesion.Show();
+			this.Close();
+		}
+
+		private void btnVentanilla_Click(object sender, EventArgs e)
+		{
+			Ventanilla turnos = new Ventanilla();
+			turnos.Show();
 		}
 	}
 }

@@ -34,15 +34,15 @@
 			this.dgvClientes = new System.Windows.Forms.DataGridView();
 			this.btnAdd = new System.Windows.Forms.Button();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.rbMiem = new System.Windows.Forms.RadioButton();
-			this.rbPrio = new System.Windows.Forms.RadioButton();
+			this.rbTercera = new System.Windows.Forms.RadioButton();
+			this.rbBlack = new System.Windows.Forms.RadioButton();
+			this.rbNormal = new System.Windows.Forms.RadioButton();
+			this.rbVIP = new System.Windows.Forms.RadioButton();
 			this.txtApellido = new System.Windows.Forms.TextBox();
 			this.txtNombre = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.radioButton1 = new System.Windows.Forms.RadioButton();
-			this.radioButton2 = new System.Windows.Forms.RadioButton();
 			((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
@@ -65,6 +65,7 @@
 			this.btnActualizar.Text = "Actualizar Cliente";
 			this.btnActualizar.UseVisualStyleBackColor = true;
 			this.btnActualizar.Visible = false;
+			this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
 			// 
 			// btnEliminar
 			// 
@@ -75,6 +76,7 @@
 			this.btnEliminar.TabIndex = 40;
 			this.btnEliminar.Text = "Eliminar Cliente";
 			this.btnEliminar.UseVisualStyleBackColor = true;
+			this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
 			// 
 			// dgvClientes
 			// 
@@ -99,13 +101,14 @@
 			this.btnAdd.TabIndex = 38;
 			this.btnAdd.Text = "Añadir Cliente";
 			this.btnAdd.UseVisualStyleBackColor = true;
+			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.radioButton2);
-			this.groupBox1.Controls.Add(this.radioButton1);
-			this.groupBox1.Controls.Add(this.rbMiem);
-			this.groupBox1.Controls.Add(this.rbPrio);
+			this.groupBox1.Controls.Add(this.rbTercera);
+			this.groupBox1.Controls.Add(this.rbBlack);
+			this.groupBox1.Controls.Add(this.rbNormal);
+			this.groupBox1.Controls.Add(this.rbVIP);
 			this.groupBox1.Location = new System.Drawing.Point(67, 192);
 			this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.groupBox1.Name = "groupBox1";
@@ -115,29 +118,53 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Tipo de Cliente";
 			// 
-			// rbMiem
+			// rbTercera
 			// 
-			this.rbMiem.AutoSize = true;
-			this.rbMiem.Location = new System.Drawing.Point(16, 76);
-			this.rbMiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.rbMiem.Name = "rbMiem";
-			this.rbMiem.Size = new System.Drawing.Size(74, 21);
-			this.rbMiem.TabIndex = 1;
-			this.rbMiem.TabStop = true;
-			this.rbMiem.Text = "Normal";
-			this.rbMiem.UseVisualStyleBackColor = true;
+			this.rbTercera.AutoSize = true;
+			this.rbTercera.Location = new System.Drawing.Point(166, 32);
+			this.rbTercera.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.rbTercera.Name = "rbTercera";
+			this.rbTercera.Size = new System.Drawing.Size(116, 21);
+			this.rbTercera.TabIndex = 3;
+			this.rbTercera.TabStop = true;
+			this.rbTercera.Text = "Tercera Edad";
+			this.rbTercera.UseVisualStyleBackColor = true;
 			// 
-			// rbPrio
+			// rbBlack
 			// 
-			this.rbPrio.AutoSize = true;
-			this.rbPrio.Location = new System.Drawing.Point(18, 35);
-			this.rbPrio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.rbPrio.Name = "rbPrio";
-			this.rbPrio.Size = new System.Drawing.Size(50, 21);
-			this.rbPrio.TabIndex = 0;
-			this.rbPrio.TabStop = true;
-			this.rbPrio.Text = "VIP";
-			this.rbPrio.UseVisualStyleBackColor = true;
+			this.rbBlack.AutoSize = true;
+			this.rbBlack.Location = new System.Drawing.Point(16, 32);
+			this.rbBlack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.rbBlack.Name = "rbBlack";
+			this.rbBlack.Size = new System.Drawing.Size(63, 21);
+			this.rbBlack.TabIndex = 2;
+			this.rbBlack.TabStop = true;
+			this.rbBlack.Text = "Black";
+			this.rbBlack.UseVisualStyleBackColor = true;
+			// 
+			// rbNormal
+			// 
+			this.rbNormal.AutoSize = true;
+			this.rbNormal.Location = new System.Drawing.Point(166, 78);
+			this.rbNormal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.rbNormal.Name = "rbNormal";
+			this.rbNormal.Size = new System.Drawing.Size(74, 21);
+			this.rbNormal.TabIndex = 1;
+			this.rbNormal.TabStop = true;
+			this.rbNormal.Text = "Normal";
+			this.rbNormal.UseVisualStyleBackColor = true;
+			// 
+			// rbVIP
+			// 
+			this.rbVIP.AutoSize = true;
+			this.rbVIP.Location = new System.Drawing.Point(16, 78);
+			this.rbVIP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.rbVIP.Name = "rbVIP";
+			this.rbVIP.Size = new System.Drawing.Size(50, 21);
+			this.rbVIP.TabIndex = 0;
+			this.rbVIP.TabStop = true;
+			this.rbVIP.Text = "VIP";
+			this.rbVIP.UseVisualStyleBackColor = true;
 			// 
 			// txtApellido
 			// 
@@ -184,30 +211,6 @@
 			this.label1.TabIndex = 31;
 			this.label1.Text = "Número de Documento";
 			// 
-			// radioButton1
-			// 
-			this.radioButton1.AutoSize = true;
-			this.radioButton1.Location = new System.Drawing.Point(169, 35);
-			this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.radioButton1.Name = "radioButton1";
-			this.radioButton1.Size = new System.Drawing.Size(63, 21);
-			this.radioButton1.TabIndex = 2;
-			this.radioButton1.TabStop = true;
-			this.radioButton1.Text = "Black";
-			this.radioButton1.UseVisualStyleBackColor = true;
-			// 
-			// radioButton2
-			// 
-			this.radioButton2.AutoSize = true;
-			this.radioButton2.Location = new System.Drawing.Point(169, 76);
-			this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.radioButton2.Name = "radioButton2";
-			this.radioButton2.Size = new System.Drawing.Size(116, 21);
-			this.radioButton2.TabIndex = 3;
-			this.radioButton2.TabStop = true;
-			this.radioButton2.Text = "Tercera Edad";
-			this.radioButton2.UseVisualStyleBackColor = true;
-			// 
 			// clientes
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -227,6 +230,7 @@
 			this.Controls.Add(this.label1);
 			this.Name = "clientes";
 			this.Text = "clientes";
+			this.Load += new System.EventHandler(this.clientes_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
@@ -243,14 +247,14 @@
 		private System.Windows.Forms.DataGridView dgvClientes;
 		private System.Windows.Forms.Button btnAdd;
 		private System.Windows.Forms.GroupBox groupBox1;
-		private System.Windows.Forms.RadioButton rbMiem;
-		private System.Windows.Forms.RadioButton rbPrio;
+		private System.Windows.Forms.RadioButton rbNormal;
+		private System.Windows.Forms.RadioButton rbVIP;
 		private System.Windows.Forms.TextBox txtApellido;
 		private System.Windows.Forms.TextBox txtNombre;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.RadioButton radioButton2;
-		private System.Windows.Forms.RadioButton radioButton1;
+		private System.Windows.Forms.RadioButton rbTercera;
+		private System.Windows.Forms.RadioButton rbBlack;
 	}
 }
