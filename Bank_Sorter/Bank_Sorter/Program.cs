@@ -8,6 +8,8 @@ namespace Bank_Sorter
 {
 	static class Program
 	{
+		public static int nivel = 0;
+		public static string usuario = "";
 		/// <summary>
 		/// The main entry point for the application.
 		/// </summary>

@@ -53,6 +53,7 @@
 			this.btnEliminar.TabIndex = 48;
 			this.btnEliminar.Text = "Eliminar Usuario";
 			this.btnEliminar.UseVisualStyleBackColor = true;
+			this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
 			// 
 			// dgvUsuarios
 			// 
@@ -72,6 +73,7 @@
 			this.btnAdd.TabIndex = 46;
 			this.btnAdd.Text = "Añadir Usuario";
 			this.btnAdd.UseVisualStyleBackColor = true;
+			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
 			// 
 			// groupBox1
 			// 
@@ -173,6 +175,7 @@
 			this.Controls.Add(this.label1);
 			this.Name = "Usuarios";
 			this.Text = "Usuarios";
+			this.Load += new System.EventHandler(this.Usuarios_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();

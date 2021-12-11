@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.v5 = new System.Windows.Forms.Label();
 			this.c5 = new System.Windows.Forms.Label();
@@ -42,6 +43,7 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.c1 = new System.Windows.Forms.Label();
 			this.btnCerrar = new System.Windows.Forms.Label();
+			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.tableLayoutPanel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -235,6 +237,15 @@
 			this.btnCerrar.Size = new System.Drawing.Size(28, 30);
 			this.btnCerrar.TabIndex = 1;
 			this.btnCerrar.Text = "X";
+			this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+			this.btnCerrar.MouseLeave += new System.EventHandler(this.btnCerrar_MouseLeave);
+			this.btnCerrar.MouseHover += new System.EventHandler(this.btnCerrar_MouseHover);
+			// 
+			// timer1
+			// 
+			this.timer1.Enabled = true;
+			this.timer1.Interval = 3500;
+			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
 			// Ventanilla
 			// 
@@ -245,6 +256,7 @@
 			this.Controls.Add(this.tableLayoutPanel1);
 			this.Name = "Ventanilla";
 			this.Text = "Ventanilla";
+			this.Load += new System.EventHandler(this.Ventanilla_Load);
 			this.tableLayoutPanel1.ResumeLayout(false);
 			this.tableLayoutPanel1.PerformLayout();
 			this.ResumeLayout(false);
@@ -267,5 +279,6 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label c1;
 		private System.Windows.Forms.Label btnCerrar;
+		private System.Windows.Forms.Timer timer1;
 	}
 }
